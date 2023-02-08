@@ -19,7 +19,6 @@ export const filterReducer = (state = initialState, action) => {
         },
       };
     case "REMOVE_FILTERED_ELEMENT":
-      console.log(state, "salam", action.payload);
       return {
         ...state,
         brands: [
