@@ -44,6 +44,7 @@ function Home() {
               ref={firstInput}
               onChange={filterFirstPrice}
               type="number"
+              placeholder="$"
               className="w-2/5 focus:outline-none text-1.5xl border-2 border-gray-300 rounded px-1 box-border"
             />
             <span className="h-[1px] border border-white w-1/6"></span>
@@ -51,6 +52,7 @@ function Home() {
               ref={lastInput}
               onChange={filterLastPrice}
               type="number"
+              placeholder="$"
               className="w-2/5 focus:outline-none text-1.5xl border-2 border-gray-300 rounded px-1 box-border"
             />
           </label>
