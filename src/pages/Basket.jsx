@@ -18,7 +18,7 @@ function Basket() {
   };
   return (
     <>
-      <ul className="mt-8">
+      <ul className="mt-32">
         {confirm && (
           <li className="w-full text-center text-3xl text-green-500 border border-green-500 p-4 box-border">
             Successful

@@ -16,7 +16,7 @@ function Details() {
   };
 
   return (
-    <div className="w-full mt-8">
+    <div className="w-full mt-32">
       <div className="flex">
         <div>
           <img src={require(`../images/${product.img}`)} alt="" />

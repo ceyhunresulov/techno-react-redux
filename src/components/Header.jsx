@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-slate-600 h-20 flex justify-between items-center rounded-b px-8 box-border">
+    <header className="bg-slate-600 h-20 flex justify-between items-center rounded-b px-16 z-10 box-border fixed left-0 top-0 w-full">
       <Link to="/" className="text-4xl font-bold font-mono text-white">
         Techno
       </Link>

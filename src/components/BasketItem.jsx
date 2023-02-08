@@ -28,8 +28,6 @@ function BasketItem({ product }) {
   const removeBasket = () => {
     dispatch(removeBasketAction(product.id));
   };
-
-  console.log(product);
   return (
     <li className="border-2 h-64 w-3/4 p-4 box-border flex mb-4 relative">
       <div className="h-full w-[200px] overflow-hidden">

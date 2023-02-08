@@ -10,6 +10,25 @@ export const productsReducer = (state = initialState, action) => {
           product.title.toLowerCase().includes(action.payload.toLowerCase())
         ),
       ];
+    case "FILTER_PRODUCTS":
+      if (action.payload.brands.length > 0) {
+        return [
+          ...data.filter(
+            (product) =>
+              action.payload.brands.includes(product.properties.Producer) &&
+              product.price >= action.payload.price.firstPrice &&
+              product.price <= action.payload.price.lastPrice
+          ),
+        ];
+      } else {
+        return [
+          ...data.filter(
+            (product) =>
+              product.price >= action.payload.price.firstPrice &&
+              product.price <= action.payload.price.lastPrice
+          ),
+        ];
+      }
     default:
       return state;
   }
