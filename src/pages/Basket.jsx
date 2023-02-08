@@ -32,11 +32,11 @@ function Basket() {
         <div className="fixed bottom-32 right-32 border-2 flex flex-col w-[250px] h-[100px] justify-between items-center">
           <span className="text-2xl ">
             Total:
-            {Math.round(
+            {
               basket?.reduce((curr, prd) => {
                 return (curr += prd.count * prd.price);
-              }, 0) / 100
-            ) * 100}
+              }, 0) 
+            }
             $
           </span>
           <button
