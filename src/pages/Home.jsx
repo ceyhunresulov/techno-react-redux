@@ -32,7 +32,7 @@ function Home() {
   };
 
   return (
-    <div className="relative w-full border md:flex justify-between mt-2 md:mt-32">
+    <div className="relative w-full md:flex justify-between mt-2 md:mt-32">
       <ul className={`mt-24 md:m-0 md:fixed left- top-32 bg-slate-600 w-64 rounded py-1 px-4 md:p-4 box-border overflow-hidden ${openFilter ? 'h-auto' : 'h-14'} `}>
         <div onClick={()=> setOpenFilter(!openFilter)} className="md:hidden w-full flex flex-col justify-center items-center">
           <h1 className="text-xl text-center text-white">Filter</h1>
