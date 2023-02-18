@@ -22,7 +22,7 @@ function Header() {
             onChange={searchProducts}
             type="text"
             placeholder="Search"
-            className="text-md md:text-xl p-1 box-border rounded focus:outline-none"
+            className="w-32 sm:w-auto text-md md:text-xl p-1 box-border rounded focus:outline-none"
           />
           <Link to="/basket" className="relative ml-4">
             <BsBasketFill className="text-3xl md:text-4xl cursor-pointer text-red-400" />
