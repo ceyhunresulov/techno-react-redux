@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   filterProductsAction,
@@ -23,7 +23,7 @@ function Filter({ brand }) {
   }, [filterELements]);
 
   return (
-    <li className="text-lg text-white mb-3">
+    <li className="text-sm md:text-lg text-white mb-1 md:mb-3 flex items-center">
       <input
         type="checkbox"
         id={brand}

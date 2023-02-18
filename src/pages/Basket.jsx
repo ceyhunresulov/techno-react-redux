@@ -29,8 +29,8 @@ function Basket() {
         ))}
       </ul>
       {(basket.length > 0 && (
-        <div className="fixed bottom-32 right-32 border-2 flex flex-col w-[250px] h-[100px] justify-between items-center">
-          <span className="text-2xl ">
+        <div className="lg:fixed my-8 bottom-32 lg:right-8 xl:right-32 border-2 md:flex flex-col w-[250px] h-[100px] justify-between items-center">
+          <span className="text-2xl m-2">
             Total:
             {
               basket?.reduce((curr, prd) => {
@@ -41,7 +41,7 @@ function Basket() {
           </span>
           <button
             onClick={confirmOreders}
-            className="bg-cyan-500 p-8 box-border w-full text-2xl text-white"
+            className="bg-cyan-500 p-4 md:p-8 box-border w-full text-2xl text-white"
           >
             confirm orders
           </button>

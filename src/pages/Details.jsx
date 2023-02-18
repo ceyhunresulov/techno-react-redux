@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addBasketAction } from "../redux/actions/basket";
@@ -17,19 +16,19 @@ function Details() {
 
   return (
     <div className="w-full mt-32">
-      <div className="flex">
+      <div className="flex flex-col border md:flex-row md:border-none">
         <div>
-          <img src={require(`../images/${product.img}`)} alt="" />
+          <img src={require(`../images/${product.img}`)} alt="" className="scale-90" />
         </div>
-        <div className="ml-10 py-8 box-border flex flex-col justify-between">
-          <h1 className="text-3xl font-bold">{product.title}</h1>
-          <div className="w-full flex items-center">
-            <span className="text-2xl border px-2 py-3 box-border rounded">
+        <div className="md:ml-10 p-4 md:py-8 box-border flex flex-col justify-between">
+          <h1 className="text-xl mb-4 md:text-3xl font-bold">{product.title}</h1>
+          <div className="w-full flex items-center justify-between">
+            <span className="text-xl md:text-2xl border px-3 py-2 box-border rounded">
               {product.price}$
             </span>
             <button
               onClick={addBusket}
-              className="text-2xl hover:bg-cyan-900 transition-all ease-in-out duration-300 px-2 py-3 rounded box-border text-white bg-cyan-500 ml-8"
+              className="text-md lg:text-2xl hover:bg-cyan-900 transition-all ease-in-out duration-300 px-2 py-1 md:px-2 md:py-3 rounded box-border text-white bg-cyan-500 ml-8"
             >
               Add Busket
             </button>
@@ -40,7 +39,7 @@ function Details() {
         {Object.keys(product.properties).map((key, i) => (
           <li
             key={i}
-            className="mb-4 text-xl w-1/4 border-b flex justify-between"
+            className="mb-4 text-xl lg:w-1/4 w-full border-b flex justify-between"
           >
             <span className="font-bold">{key}:</span>
             <span className="w-1/2 text-left">{product.properties[key]}</span>

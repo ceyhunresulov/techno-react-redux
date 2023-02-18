@@ -10,7 +10,7 @@ function ProductCard({ product }) {
     dispatch(addBasketAction(product.id));
   };
   return (
-    <li className="w-1/4 flex flex-col justify-between border-2 mb-8 ml-8 rounded-md p-2 pt-0 box-border hover:border-cyan-600 transition-all ease-in-out duration-300">
+    <li className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col justify-between border-2 mb-8 md:ml-8 rounded-md p-2 pt-0 box-border hover:border-cyan-600 transition-all ease-in-out duration-300">
       <Link to={`/${product.id}`}>
         <div className="w-full cursor-pointer overflow-hidden">
           <img

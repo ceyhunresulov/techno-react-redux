@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="w-11/12 sm:w-4/6 md:w-10/12 xl:w-11/12 mx-auto pb-4 box-border">
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
